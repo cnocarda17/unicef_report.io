@@ -1,0 +1,99 @@
+country,alpha_2_code,alpha_3_code,numeric_code,indicator,time_period,obs_value,sex,unit_multiplier,unit_of_measure,observation_status,observation_confidentaility,time_period_activity_related_to_when_the_data_are_collected,current_age
+Afghanistan,AF,AFG,4,Percentage of men (aged 20-24 years) married or in union before age 18,2015,7.3,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Albania,AL,ALB,8,Percentage of men (aged 20-24 years) married or in union before age 18,2018,1.2,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Angola,AO,AGO,24,Percentage of men (aged 20-24 years) married or in union before age 18,2016,6,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Armenia,AM,ARM,51,Percentage of men (aged 20-24 years) married or in union before age 18,2016,0.4,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Azerbaijan,AZ,AZE,31,Percentage of men (aged 20-24 years) married or in union before age 18,2006,0.4,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Bangladesh,BD,BGD,50,Percentage of men (aged 20-24 years) married or in union before age 18,2011,4.4,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Belarus,BY,BLR,112,Percentage of men (aged 20-24 years) married or in union before age 18,2019,1.6,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Belize,BZ,BLZ,84,Percentage of men (aged 20-24 years) married or in union before age 18,2016,22.2,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Benin,BJ,BEN,204,Percentage of men (aged 20-24 years) married or in union before age 18,2018,4.8,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+"Bolivia, Plurinational State of",BO,BOL,68,Percentage of men (aged 20-24 years) married or in union before age 18,2016,5.2,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Bosnia and Herzegovina,BA,BIH,70,Percentage of men (aged 20-24 years) married or in union before age 18,2012,0.092,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Burkina Faso,BF,BFA,854,Percentage of men (aged 20-24 years) married or in union before age 18,2015,1.6,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Burundi,BI,BDI,108,Percentage of men (aged 20-24 years) married or in union before age 18,2017,1.4,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Cape Verde,CV,CPV,132,Percentage of men (aged 20-24 years) married or in union before age 18,2018,1.5,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Cambodia,KH,KHM,116,Percentage of men (aged 20-24 years) married or in union before age 18,2014,3.6,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Cameroon,CM,CMR,120,Percentage of men (aged 20-24 years) married or in union before age 18,2018,2.9,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Central African Republic,CF,CAF,140,Percentage of men (aged 20-24 years) married or in union before age 18,2019,17.1,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Chad,TD,TCD,148,Percentage of men (aged 20-24 years) married or in union before age 18,2019,8.1,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+China,CN,CHN,156,Percentage of men (aged 20-24 years) married or in union before age 18,2020,0.719,Total,,%,Reanalysed,Free,End of fieldwork,20 to 24 years old
+Colombia,CO,COL,170,Percentage of men (aged 20-24 years) married or in union before age 18,2015,6.7,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Comoros,KM,COM,174,Percentage of men (aged 20-24 years) married or in union before age 18,2012,11.9,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Congo,CG,COG,178,Percentage of men (aged 20-24 years) married or in union before age 18,2012,5.9,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Cuba,CU,CUB,192,Percentage of men (aged 20-24 years) married or in union before age 18,2019,5.9,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Ivory Coast,CI,CIV,384,Percentage of men (aged 20-24 years) married or in union before age 18,2016,3.5,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+"Korea, Democratic People's Republic of",KP,PRK,408,Percentage of men (aged 20-24 years) married or in union before age 18,2017,0,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+"Congo, the Democratic Republic of the",CD,COD,180,Percentage of men (aged 20-24 years) married or in union before age 18,2018,5.6,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Dominican Republic,DO,DOM,214,Percentage of men (aged 20-24 years) married or in union before age 18,2013,8,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Egypt,EG,EGY,818,Percentage of men (aged 20-24 years) married or in union before age 18,2009,0.2,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Equatorial Guinea,GQ,GNQ,226,Percentage of men (aged 20-24 years) married or in union before age 18,2011,3.5,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Eritrea,ER,ERI,232,Percentage of men (aged 20-24 years) married or in union before age 18,2010,2.3,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Swaziland,SZ,SWZ,748,Percentage of men (aged 20-24 years) married or in union before age 18,2014,1,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Ethiopia,ET,ETH,231,Percentage of men (aged 20-24 years) married or in union before age 18,2016,5,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Fiji,FJ,FJI,242,Percentage of men (aged 20-24 years) married or in union before age 18,2021,1.7,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Gabon,GA,GAB,266,Percentage of men (aged 20-24 years) married or in union before age 18,2012,4.7,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Gambia,GM,GMB,270,Percentage of men (aged 20-24 years) married or in union before age 18,2020,0.2,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Georgia,GE,GEO,268,Percentage of men (aged 20-24 years) married or in union before age 18,2018,0.5,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Ghana,GH,GHA,288,Percentage of men (aged 20-24 years) married or in union before age 18,2018,3.9,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Guatemala,GT,GTM,320,Percentage of men (aged 20-24 years) married or in union before age 18,2015,9.6,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Guinea,GN,GIN,324,Percentage of men (aged 20-24 years) married or in union before age 18,2018,1.9,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Guinea-Bissau,GW,GNB,624,Percentage of men (aged 20-24 years) married or in union before age 18,2019,2.2,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Guyana,GY,GUY,328,Percentage of men (aged 20-24 years) married or in union before age 18,2014,8.5,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Haiti,HT,HTI,332,Percentage of men (aged 20-24 years) married or in union before age 18,2017,1.552,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Honduras,HN,HND,340,Percentage of men (aged 20-24 years) married or in union before age 18,2019,9.994,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+India,IN,IND,356,Percentage of men (aged 20-24 years) married or in union before age 18,2021,2.634,Total,,%,Reanalysed,Free,End of fieldwork,20 to 24 years old
+Indonesia,ID,IDN,360,Percentage of men (aged 20-24 years) married or in union before age 18,2012,5.3,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Jordan,JO,JOR,400,Percentage of men (aged 20-24 years) married or in union before age 18,2018,0.065,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Kazakhstan,KZ,KAZ,398,Percentage of men (aged 20-24 years) married or in union before age 18,2011,0.3,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Kenya,KE,KEN,404,Percentage of men (aged 20-24 years) married or in union before age 18,2014,2.5,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Kiribati,KI,KIR,296,Percentage of men (aged 20-24 years) married or in union before age 18,2019,8.6,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Kyrgyzstan,KG,KGZ,417,Percentage of men (aged 20-24 years) married or in union before age 18,2012,0.4,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Lao People's Democratic Republic,LA,LAO,418,Percentage of men (aged 20-24 years) married or in union before age 18,2017,10.8,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Lesotho,LS,LSO,426,Percentage of men (aged 20-24 years) married or in union before age 18,2018,1.9,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Liberia,LR,LBR,430,Percentage of men (aged 20-24 years) married or in union before age 18,2020,8.4,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Madagascar,MG,MDG,450,Percentage of men (aged 20-24 years) married or in union before age 18,2021,11.232,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Malawi,MW,MWI,454,Percentage of men (aged 20-24 years) married or in union before age 18,2020,6.964,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Maldives,MV,MDV,462,Percentage of men (aged 20-24 years) married or in union before age 18,2017,2.2,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Mali,ML,MLI,466,Percentage of men (aged 20-24 years) married or in union before age 18,2018,2.1,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Marshall Islands,MH,MHL,584,Percentage of men (aged 20-24 years) married or in union before age 18,2007,11.8,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Mauritania,MR,MRT,478,Percentage of men (aged 20-24 years) married or in union before age 18,2021,1.2,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Mongolia,MN,MNG,496,Percentage of men (aged 20-24 years) married or in union before age 18,2018,2.1,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Montenegro,ME,MNE,499,Percentage of men (aged 20-24 years) married or in union before age 18,2018,3.2,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Mozambique,MZ,MOZ,508,Percentage of men (aged 20-24 years) married or in union before age 18,2015,9.7,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Burma,MM,MMR,104,Percentage of men (aged 20-24 years) married or in union before age 18,2016,5,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Namibia,,NAM,516,Percentage of men (aged 20-24 years) married or in union before age 18,2013,1.4,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Nauru,NR,NRU,520,Percentage of men (aged 20-24 years) married or in union before age 18,2007,12.3,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Nepal,NP,NPL,524,Percentage of men (aged 20-24 years) married or in union before age 18,2019,9,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Nicaragua,NI,NIC,558,Percentage of men (aged 20-24 years) married or in union before age 18,2012,19.4,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Niger,NE,NER,562,Percentage of men (aged 20-24 years) married or in union before age 18,2012,5.7,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Nigeria,NG,NGA,566,Percentage of men (aged 20-24 years) married or in union before age 18,2021,1.611,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Pakistan,PK,PAK,586,Percentage of men (aged 20-24 years) married or in union before age 18,2018,4.7,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Papua New Guinea,PG,PNG,598,Percentage of men (aged 20-24 years) married or in union before age 18,2018,3.7,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Philippines,PH,PHL,608,Percentage of men (aged 20-24 years) married or in union before age 18,2003,2.9,Total,,%,Reanalysed,Free,End of fieldwork,20 to 24 years old
+Qatar,QA,QAT,634,Percentage of men (aged 20-24 years) married or in union before age 18,2012,0.6,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+"Moldova, Republic of",MD,MDA,498,Percentage of men (aged 20-24 years) married or in union before age 18,2012,0.7,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Rwanda,RW,RWA,646,Percentage of men (aged 20-24 years) married or in union before age 18,2020,0.412,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Samoa,WS,WSM,882,Percentage of men (aged 20-24 years) married or in union before age 18,2020,2,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Sao Tome and Principe,ST,STP,678,Percentage of men (aged 20-24 years) married or in union before age 18,2019,3.1,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Senegal,SN,SEN,686,Percentage of men (aged 20-24 years) married or in union before age 18,2019,0.7,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Serbia,RS,SRB,688,Percentage of men (aged 20-24 years) married or in union before age 18,2010,0.9,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Sierra Leone,SL,SLE,694,Percentage of men (aged 20-24 years) married or in union before age 18,2019,4.1,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Solomon Islands,SB,SLB,90,Percentage of men (aged 20-24 years) married or in union before age 18,2015,4.4,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+South Africa,ZA,ZAF,710,Percentage of men (aged 20-24 years) married or in union before age 18,2016,0.6,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Suriname,SR,SUR,740,Percentage of men (aged 20-24 years) married or in union before age 18,2018,19.6,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Thailand,TH,THA,764,Percentage of men (aged 20-24 years) married or in union before age 18,2019,9.8,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Timor-Leste,TL,TLS,626,Percentage of men (aged 20-24 years) married or in union before age 18,2016,1.2,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Togo,TG,TGO,768,Percentage of men (aged 20-24 years) married or in union before age 18,2017,2.6,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Tonga,TO,TON,776,Percentage of men (aged 20-24 years) married or in union before age 18,2019,2.8,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Tunisia,TN,TUN,788,Percentage of men (aged 20-24 years) married or in union before age 18,2018,0,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Turks and Caicos Islands,TC,TCA,796,Percentage of men (aged 20-24 years) married or in union before age 18,2020,5.129,Total,,%,Low reliability,Free,End of fieldwork,20 to 24 years old
+Tuvalu,TV,TUV,798,Percentage of men (aged 20-24 years) married or in union before age 18,2020,1.728,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Uganda,UG,UGA,800,Percentage of men (aged 20-24 years) married or in union before age 18,2016,5.5,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Ukraine,UA,UKR,804,Percentage of men (aged 20-24 years) married or in union before age 18,2012,3.8,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+"Tanzania, United Republic of",TZ,TZA,834,Percentage of men (aged 20-24 years) married or in union before age 18,2016,3.9,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Uzbekistan,UZ,UZB,860,Percentage of men (aged 20-24 years) married or in union before age 18,2002,0.5,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Vanuatu,VU,VUT,548,Percentage of men (aged 20-24 years) married or in union before age 18,2013,4.6,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Viet Nam,VN,VNM,704,Percentage of men (aged 20-24 years) married or in union before age 18,2021,1.944,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Zambia,ZM,ZMB,894,Percentage of men (aged 20-24 years) married or in union before age 18,2018,2.8,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old
+Zimbabwe,ZW,ZWE,716,Percentage of men (aged 20-24 years) married or in union before age 18,2019,1.9,Total,,%,Reported,Free,End of fieldwork,20 to 24 years old

@@ -1,0 +1,316 @@
+---
+title: "UNICEF Indicators Report"
+format: 
+  html: 
+    code-background: true
+    df-print: kable
+execute: 
+  warning: false
+editor: visual
+---
+
+```{r, eval = TRUE, echo = FALSE}
+
+library(maps)
+library(dplyr)
+library(mapdata)
+library(ggplot2)
+library(viridis)
+library(tidyverse)
+
+```
+
+```{r, eval = TRUE, echo = FALSE}
+
+
+unicef_indicator_1 <- read_csv("unicef_indicator_1.csv", col_types = cols(
+  country = col_character(),
+  alpha_2_code = col_character(),
+  alpha_3_code = col_character(),
+  numeric_code = col_double(),
+  indicator = col_character(),
+  time_period = col_double(),
+  obs_value = col_double(),
+  sex = col_character(),
+  unit_multiplier = col_logical(),
+  unit_of_measure = col_character(),
+  observation_status = col_character(),
+  observation_confidentaility = col_character(),
+  time_period_activity_related_to_when_the_data_are_collected = col_character(),
+  current_age = col_character()
+))
+
+unicef_indicator_2 <- read_csv("unicef_indicator_2.csv", col_types = cols(
+  country = col_character(),
+  alpha_2_code = col_character(),
+  alpha_3_code = col_character(),
+  numeric_code = col_double(),
+  indicator = col_character(),
+  time_period = col_double(),
+  obs_value = col_double(),
+  sex = col_character(),
+  unit_multiplier = col_character(),
+  unit_of_measure = col_character(),
+  observation_status = col_character(),
+  observation_confidentaility = col_character(),
+  time_period_activity_related_to_when_the_data_are_collected = col_character(),
+  current_age = col_character()
+))
+
+unicef_metadata <- read_csv("unicef_metadata.csv", col_types = cols(
+  country = col_character(),
+  alpha_2_code = col_character(),
+  alpha_3_code = col_character(),
+  numeric_code = col_double(),
+  year = col_double(),
+  'Population, total' = col_double(),
+  'GDP per capita (constant 2015 US$)' = col_double(),
+  'GNI (current US$)' = col_double(),
+  'Inflation, consumer prices (annual %)' = col_double(),
+  'Life expectancy at birth, total (years)' = col_double(),
+  'Military expenditure (% of GDP)' = col_double()
+))
+
+```
+
+# Mean GDP per Capita
+
+GDP per capita serves as a measure of a country's economic output per person, providing insights into its standard of living, economic growth, and productivity.
+
+##### Top 5 Countries with highest Mean GDP per Capita
+
+------------------------------------------------------------------------
+
+*GDP per capita showcases the economic prowess and prosperity of nations, reflecting their ability to generate wealth and provide a high standard of living for their citizens. Below are the top 5 countries with the highest mean GDP per capita, representing leaders in economic development and productivity.*
+
+```{r, eval = TRUE, echo = FALSE}
+
+world_map <- map_data("world")
+
+aggregated_data <- unicef_metadata %>%
+  group_by(country) %>%
+  summarise(
+    `GDP per capita (constant 2015 US$)` = mean(`GDP per capita (constant 2015 US$)`, na.rm = TRUE),
+    `Life expectancy at birth, total (years)` = mean(`Life expectancy at birth, total (years)`, na.rm = TRUE)
+  )
+
+aggregated_data <- aggregated_data %>%
+  filter(!is.na(`GDP per capita (constant 2015 US$)`),
+         !is.na(`Life expectancy at birth, total (years)`))
+
+colnames(aggregated_data)[1] <- "region"
+
+top_gdp_countries <- aggregated_data %>%
+  top_n(5, `GDP per capita (constant 2015 US$)`) %>%
+  select(Country = region, `Mean GDP per capita` = `GDP per capita (constant 2015 US$)`)
+
+top_gdp_countries
+
+```
+
+```{r, eval = TRUE, echo = FALSE}
+
+merged_data <- merge(world_map, aggregated_data, by = "region", all.x = TRUE)
+
+plain <- theme(
+  axis.text = element_blank(),
+  axis.line = element_blank(),
+  axis.ticks = element_blank(),
+  panel.border = element_blank(),
+  panel.grid = element_blank(),
+  axis.title = element_blank(),
+  panel.background = element_rect(fill = "white"),
+  plot.title = element_text(hjust = 0.5)
+)
+
+
+world_map_chart <- ggplot() +
+  geom_polygon(data = merged_data, aes(x = long, y = lat, group = group, fill = `GDP per capita (constant 2015 US$)`)) +
+  scale_fill_distiller(palette ="RdBu", direction = -1) +
+  labs(title = "Average GDP per Capita (constant 2015 US$) by Country",
+       fill = "GDP per Capita") +
+  guides(fill = FALSE) + 
+  plain +
+  theme(plot.title = element_text(size = 16, face = "bold"),  
+        axis.title = element_text(size = 12), 
+        axis.text = element_text(size = 10))    
+
+world_map_chart
+
+```
+
+# Average Life Expectancy
+
+*Life expectancy reflects the quality of life and healthcare accessibility within a nation, offering valuable information about healthcare systems, public health initiatives, and social welfare programs.*
+
+##### Top 5 Countries with highest Mean Life Expectancy
+
+------------------------------------------------------------------------
+
+The analysis of mean life expectancy provides insight into the healthcare standards and overall well-being of populations across different countries. Here are the top 5 countries with the highest mean life expectancy, representing leaders in healthcare and quality of life.
+
+```{r, eval = TRUE, echo = FALSE}
+
+top_expectancy_countries <- aggregated_data %>%
+  top_n(5, `Life expectancy at birth, total (years)`) %>%
+  select(Country = region, `Mean Life Expectancy` = `Life expectancy at birth, total (years)`)
+
+top_expectancy_countries
+
+```
+
+```{r, eval = TRUE, echo = FALSE}
+
+merged_data_life_expectancy <- merge(world_map, aggregated_data, by = "region", all.x = TRUE)
+
+plain <- theme(
+  axis.text = element_blank(),
+  axis.line = element_blank(),
+  axis.ticks = element_blank(),
+  panel.border = element_blank(),
+  panel.grid = element_blank(),
+  axis.title = element_blank(),
+  panel.background = element_rect(fill = "white"),
+  plot.title = element_text(hjust = 0.5)
+)
+
+
+world_map_chart_life_expectancy <- ggplot() +
+  geom_polygon(data = merged_data_life_expectancy, aes(x = long, y = lat, group = group, fill = `Life expectancy at birth, total (years)`)) +
+  scale_fill_distiller(palette ="BuGn", direction = 1) +  # Change the color palette
+  labs(title = "Average Life Expectancy at Birth by Country",
+       fill = "Life Expectancy (years)") +
+  plain +
+  guides(fill = FALSE) + 
+  theme(plot.title = element_text(size = 16, face = "bold"),  
+        axis.title = element_text(size = 12), 
+        axis.text = element_text(size = 10))   
+
+
+world_map_chart_life_expectancy
+
+
+```
+
+# Inflation Rates: Top 20 Countries in 2022
+
+Inflation, a key economic indicator, measures the rate at which prices for goods and services rise over time, affecting consumers' purchasing power and overall economic stability. This plot illustrates the inflation rates of the top 20 countries in 2022, showcasing those experiencing the highest inflationary pressures.
+
+```{r, eval = TRUE, echo = FALSE}
+
+data_2022 <- filter(unicef_metadata, year == 2022)
+
+top_10_countries_2022 <- data_2022 %>%
+  arrange(desc(`Inflation, consumer prices (annual %)`)) %>%
+  head(20)
+
+
+ inflation_bar_2022_top_10 <- ggplot(top_10_countries_2022, aes(x = alpha_3_code, y = `Inflation, consumer prices (annual %)`, fill = `Inflation, consumer prices (annual %)`)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = round(`Inflation, consumer prices (annual %)`, 2)), position = position_stack(vjust = 0.5), angle = 90, size = 3, color = "black") +
+  labs(title = "Top 20 Countries by Inflation in 2022",
+       x = "Country",
+       y = "Inflation, consumer prices (annual %)",
+       fill = "Inflation, consumer prices (annual %)") +
+  theme_minimal() +
+  theme(plot.title = element_text(size = 16, face = "bold"),  
+        axis.title = element_text(size = 12), 
+        axis.text = element_text(size = 10)) +
+   
+  scale_fill_gradient(low = "#5EDC1F", high = "#8DB600") + 
+  guides(fill = FALSE)
+
+inflation_bar_2022_top_10
+
+```
+
+# Population Fluctuations: Top 10 Countries with the Largest Population Increases
+
+The graph illustrates the population fluctuations over time for the top 10 countries experiencing the most substantial increases in population. Each line represents a country's total population plotted against the years. Notably, these nations have demonstrated significant demographic shifts, characterized by steady population growth.
+
+```{r, eval = TRUE, echo = FALSE}
+
+population_fluctuations <- unicef_metadata %>%
+  group_by(country) %>%
+  summarize(fluctuation = min(`Population, total`) - max(`Population, total`)) %>%
+  arrange(fluctuation)
+
+top_increasing_countries <- population_fluctuations %>%
+  head(10) %>%
+  pull(country)
+
+top_increasing_data <- unicef_metadata %>%
+  filter(country %in% top_increasing_countries)
+
+time_series_top_increasing <- ggplot(data = top_increasing_data, aes(x = year, y = `Population, total`, group = country, color = country)) +
+  geom_line(linewidth = 1.5) +
+  scale_color_brewer(palette = "Set3") +  
+  labs(title = "Top 5 Countries with Largest Population Increases",
+       x = "Year",
+       y = "Total Population") +
+  theme_minimal() +
+  theme(legend.position = "top",
+        plot.title = element_text(size = 16, face = "bold"),  
+        axis.title = element_text(size = 12), 
+        axis.text = element_text(size = 10))   
+
+time_series_top_increasing
+
+```
+
+# Analysis of Percentage of Men (Aged 20-24) Married or in Union Before Age 18 by Country
+
+The horizontal bar plot depicts the percentage of men aged 20-24 who are married or in union before reaching the age of 18, segmented by country. Each bar in the plot represents the observed percentage for a specific country, offering insights into early marriage or union practices within different geographic regions. By focusing on men within this age group, the analysis sheds light on societal norms, cultural practices, and potential challenges related to early marriage or union.
+
+```{r, eval = TRUE, echo = FALSE}
+
+subset_data <- unicef_indicator_1 %>%
+  filter(obs_value > 10)
+
+my_color_map <- scale_fill_viridis(discrete = FALSE)
+
+horizontal_bar_plot <- ggplot(subset_data, aes(x = obs_value, y = country, fill = obs_value)) +
+  geom_bar(stat = "identity") +
+  guides(fill = FALSE) + 
+  geom_text(aes(label = sprintf("%.1f", obs_value)), hjust = -0.2, size = 5, color = "black") +
+  my_color_map + 
+  labs(title = "Observed Values > 10% by Country",
+       x = "Observed Value",
+       y = "Country") +
+  theme_minimal() + 
+  theme(plot.title = element_text(size = 16, face = "bold"),  
+        axis.title = element_text(size = 12), 
+        axis.text = element_text(size = 10))  
+
+print(horizontal_bar_plot)
+
+
+```
+
+# Relationship between GDP per Capita and Life Expectancy at Birth
+
+The scatter plot illustrates the relationship between a country's GDP per capita, measured in constant 2015 US dollars, and its life expectancy at birth in years. Each data point represents a country, with its position on the plot indicating both its economic prosperity and the life expectancy of its population. Additionally, a linear regression line is overlaid to provide insights into the direction and strength of the relationship between these two variables.
+
+```{r, eval = TRUE, echo = FALSE}
+
+missing_values <- unicef_metadata[is.na(unicef_metadata$`GDP per capita (constant 2015 US$)`) |
+                                  is.na(unicef_metadata$`Life expectancy at birth, total (years)`), ]
+
+cleaned_data <- unicef_metadata[complete.cases(unicef_metadata$`GDP per capita (constant 2015 US$)`, 
+                                                unicef_metadata$`Life expectancy at birth, total (years)`), ]
+
+scatter_plot <- ggplot(cleaned_data, aes(x = `GDP per capita (constant 2015 US$)`, y = `Life expectancy at birth, total (years)`)) +
+  geom_point(color = "royalblue", size = 3) +  
+  geom_smooth(method = "lm", se = FALSE, color = "green", linetype = "dashed", linewidth = 1.5) +
+  labs(title = "GDP per Capita vs. Life Expectancy",
+       x = "GDP per Capita (constant 2015 US$)",
+       y = "Life Expectancy at Birth (years)") +
+  theme_minimal() +  
+  theme(legend.position = "top",
+        plot.title = element_text(size = 16, face = "bold"),  
+        axis.title = element_text(size = 12), 
+        axis.text = element_text(size = 10))  
+
+scatter_plot
+
+```
